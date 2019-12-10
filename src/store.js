@@ -1,9 +1,8 @@
 import { createStore } from 'redux';
-
+import reducer from './reducers';
 // Definir el state inicial
 
 const initialState = [];
-
 const store = createStore(
     reducer,
     initialState,

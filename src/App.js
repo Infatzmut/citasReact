@@ -1,7 +1,10 @@
 import React from 'react';
-
+// Redux
+import store from './store';
+import { Provider } from 'react-redux';
 function App() {
   return (
+    <Provider store={store}>
     <div className="container">
       <header>
         <h1 className="text-center">Administrador de Pacientes Veterinaria</h1>
@@ -15,6 +18,7 @@ function App() {
         </div>
       </div>
     </div>
+    </Provider>
   );
 }
 
